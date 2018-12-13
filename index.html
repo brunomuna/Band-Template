@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BAND TEMPLATE</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+</head>
+
+<body>
+  <!--  NAVBAR -->
+  <div class="top">
+    <div class="navbar">
+      <a href="javascript:void(0);" id="menu-bar" onclick="myFunction()">
+        <i class="fas fa-bars"></i>
+      </a>
+      <a href="#home">HOME</a>
+      <a href="#band">BAND</a>
+      <a href="#tour">TOUR</a>
+      <a href="#contact">CONTACT</a>
+      <a href="#" id="search">
+        <i class="fas fa-search"></i>
+      </a>
+      <div id="menu-content" style="display:none;">
+        <a href="#band">BAND</a>
+        <a href="#tour">TOUR</a>
+        <a href="#contact">CONTACT</a>
+      </div>
+      <div class="dropdown">
+        <button href="javascript:void(0)" class="dropbtn">
+          MORE <i class="fas fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Merchandise</a>
+          <a href="#">Extras</a>
+          <a href="#">Galeria</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="clear:both;"></div>
+  <!-- Page content -->
+  <div class="page-content" id="home">
+    <!-- Automatic Slideshow Images -->
+    <div class="div01">
+      <div class="mySlides">
+        <img src="https://www.w3schools.com/w3images/chicago.jpg" alt="">
+        <div class="text">
+          <h3> Chicago </h3>
+          <p>
+            <b>Thank you, Chicago - A night we won't forget.</b>
+          </p>
+        </div>
+      </div>
+      <div class="mySlides">
+        <img src="https://www.w3schools.com/w3images/la.jpg" alt="">
+        <div class="text">
+          <h3> Los Angeles </h3>
+          <p>
+            <b>We had the best time playing at Venice Beach!</b>
+          </p>
+        </div>
+      </div>
+      <div class="mySlides">
+        <img src="https://www.w3schools.com/w3images/ny.jpg" alt="">
+        <div class="text">
+          <h3>New York</h3>
+          <p>
+            <b>The atmosphere in New York is lorem ipsum.</b>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- The Band Section -->
+    <div class="div02" id="band">
+      <h2>THE BAND</h2>
+      <div class="opacity">
+        We love music
+      </div>
+      <p class="justify">
+        We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <div class="boxes">
+        <div class="box">
+          <p>Name</p>
+          <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="">
+        </div>
+        <div class="box">
+          <p>Name</p>
+          <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="">
+        </div>
+        <div class="box">
+          <p>Name</p>
+          <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- The Tour Section -->
+    <div class="div03" id="tour">
+      <div class="tour-container">
+        <h2>TOUR DATES</h2>
+        <div class="opacity"><em>Remember to book your tickets!<div class="dates">
+          <div class="date">
+            September <span class="sell"> Sold out </span>
+          </div>
+          <div class="date">
+            Octuber <span class="sell"> Sold out </span>
+          </div>
+          <div class="date">
+            November <span class="number"> 3 </span>
+          </div>
+        </div>
+        <!-- Ticket Modal -->
+        <div class="tickets">
+          <div class="ticket">
+            <img src="https://www.w3schools.com/w3images/newyork.jpg" alt="">
+            <div class="ticket-text">
+              <p>
+                <b>New York</b>
+              </p>
+              <p class="opacity">Fri 27 Nov 2016</p>
+              <p> Praesent tincidunt sed tellus ut rutrum sed vitae justo. </p>
+              <a href="#" onclick="document.getElementById('ticketModal')">
+                Buy Tickets
+              </a>
+            </div>
+          </div>
+          <div class="ticket">
+            <img src="https://www.w3schools.com/w3images/paris.jpg" alt="">
+            <div class="ticket-text">
+              <p>
+                <b>Paris</b>
+              </p>
+              <p class="opacity">Sat 28 Nov 2016</p>
+              <p> Praesent tincidunt sed tellus ut rutrum sed vitae justo. </p>
+              <a href="#" onclick="document.getElementById('ticketModal')">
+                Buy Tickets
+              </a>
+            </div>
+          </div>
+          <div class="ticket">
+            <img src="https://www.w3schools.com/w3images/sanfran.jpg" alt="">
+            <div class="ticket-text">
+              <p>
+                <b>San Francisco</b>
+              </p>
+              <p class="opacity">Sun 29 Nov 2016 </p>
+              <p> Praesent tincidunt sed tellus ut rutrum sed vitae justo. </p>
+              <a href="#" class="ticket-buy" onclick="document.getElementById('ticketModal').style.display='block'">
+                Buy Tickets
+              </a>
+            </div>
+          </div>
+          <!-- COMPRA DE TICKET -->
+          <div class="ticket-modal" id="ticketModal" style="display: none;">
+            <div class="ticket-top">
+              <i class="fas fa-briefcase fa-x4"></i>Tickets
+            </div>
+            <div class="ticket-middle">
+              <i class="fas fa-shopping-cart"></i>Tickets, R$15 per person
+              <input type="text" placeholder="How many?">
+              <i class="fas fa-user"></i>Send to
+              <input type="text" placeholder="Enter email">
+              <a href="#">PAY <i class="fas fa-check"></i></a>
+              <a href="#" class="ticket-close">Close <i class="fas fa-times"></i></a>
+              <a href="#" class="help">Need help?</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="clear: both;"></div>
+    <!-- The Contact Section -->
+    <div class="div04" id="contact">
+      <h2> CONTACT </h2>
+      <p class="opacity">
+        <i> Fan? Drop a note! </i>
+      </p>
+      <div class="contact-container container">
+        <div class="contact-left">
+          <i class="fas fa-map-marker-alt"></i>Chicago, US
+          <br>
+          <i class="fas fa-phone"></i>Phone:+00 151515
+          <br>
+          <i class="fas fa-envelope"></i>Email: mail@mail.com
+          <br>
+        </div>
+        <div class="contact-right">
+          <form action="/action_page.php" target="_blank">
+            <div class="container">
+              <div class="container-half">
+                <input type="text" placeholder="Name">
+              </div>
+              <div class="container-half">
+                <input type="text" placeholder="Email">
+              </div>
+            </div>
+            <input type="text" placeholder="Message">
+            <a href="#" class="contact-submit" type="submit">
+              SEND
+            </a>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Add Google Maps -->
+    <div id="googleMap"></div>
+    <script>
+    function myMap() {
+      var mapCanvas = document.getElementById("googleMap");
+      var mapOptions = {
+        center: new google.maps.LatLng(51.5, -0.2), zoom: 10
+      };
+      var map = new google.maps.Map(mapCanvas, mapOptions);
+    }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+    <!--
+    To use this code on your website, get a free API key from Google.
+    Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+  -->
+  <div style="clear: both;"></div>
+  <!-- Footer -->
+  <footer class="container opacity">
+    <i class="fab fa-facebook-square"></i>
+    <i class="fab fa-instagram"></i>
+    <i class="fab fa-codepen"></i>
+    <i class="fab fa-linkedin"></i>
+    <br>
+    <p>Powered by <a href="https://codepen.io/brunomuna/">Bruno Munarolo</a></p>
+  </footer>
+</div>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {
+    myIndex = 1
+  }
+  x[myIndex - 1].style.display = "block";
+  setTimeout(carousel, 4000);
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+<script>
+// Open the Modal
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace("active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+function myFunction() {
+  var x = document.getElementById("menu-content");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,551 @@
+/* GERAL */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  overflow-x: hidden;
+  box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+html,
+body {
+  font-family: Verdana, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+body {
+  font-family: "Lato", sans-serif !important;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  margin: 0;
+}
+
+.opacity {
+  opacity: 0.60 !important;
+}
+
+.container::before, .container::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Navigation */
+.top {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: black;
+}
+
+.navbar{
+  color: #fff;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.16), 0 0 10px 0 rgba(0, 0, 0, 0.12);
+  width: 100%;
+}
+
+.navbar > a {
+  padding: 12px 24px!important;
+  color: #fff;
+  text-decoration: none;
+  float: left;
+}
+
+.navbar > a:hover {
+  background-color: #CCCCCC;
+  color: black;
+}
+
+#search {
+  float: right!important;
+  padding: 15.3px 24px!important;
+}
+
+/* SEARCH BUTTON */
+#search:hover{
+  background-color: #F44336!important;
+  color: #fff!important;
+}
+
+/* DROPDOWN */
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #cccccc;
+    color: #000;
+}
+
+.dropdown-content a:hover .dropbtn{
+  color: #black!important;
+}
+
+.dropbtn {
+  padding: 12px 24px;
+  background-color: black;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  float: left;
+}
+
+/* DROPDOWN-CONTENT */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 1;
+}
+
+.dropdown-content > a {
+  float: none;
+  display: block;
+  color: black;
+  padding: 12px 24px;
+  text-decoration: none;
+  text-align: left;
+}
+
+.dropdown-content > a:hover {
+  background-color: #CCCCCC;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* SMALL SCREEN MENU-BAR*/
+#menu-bar{
+  float: right!important;
+  padding: 15.3px 24px!important;
+}
+
+
+/* PAGE CONTENT */
+.page-content {
+  margin: auto;
+}
+
+
+/* SLIDESHOW */
+.div01 {
+  padding-top: 46px;
+}
+
+.mySlides {
+  display: none;
+  position: relative;
+  margin: auto;
+  text-align: center !important;
+}
+
+.mySlides img {
+  width: 100%;
+  vertical-align: middle;
+  position: relative;
+  border-style: none;
+}
+
+.mySlides > .text {
+  color: #fff;
+  position: absolute;
+  padding-top: 32px !important;
+  padding-bottom: 32px !important;
+  z-index: 0;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+}
+
+.mySlides h3 {
+  font-size: 24px !important;
+  font-size: 1.17em;
+  text-align: center;
+}
+
+.mySlides p {
+  font-weight: bold;
+}
+
+
+/* BAND */
+#band {
+  max-width: 800px;
+  padding-top: 64px!important;
+  padding-bottom: 64px!important;
+  text-align: center!important;
+  margin: auto;
+  padding: 0.01em 16px;
+}
+
+#band::before, #band::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.boxes::before, .boxes::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#band > h2 {
+  font-size: 30px;
+  letter-spacing: 4px;
+  text-align: center!important;
+}
+
+#band > .opacity {
+  margin-bottom: 40px;
+  font-style: italic!important;
+  font-size: 15px;
+}
+
+#band > .justify {
+  text-align: justify!important;
+}
+
+#band > .boxes {
+  padding-top: 32px!important;
+  padding-bottom: 32px!important;
+  text-align: center;
+}
+
+.box {
+  width: 33.33333%;
+  float: left;
+  margin: auto;
+}
+
+.box > img {
+  width: 65% !important;
+  margin-bottom: 16px !important;
+  border-radius: 4px;
+  vertical-align: middle;
+  border-style: none;
+}
+
+/* THE TOUR SECTION */
+#tour {
+  background-color: black;
+  color: #fff;
+}
+
+.tour-container::before, .tour-container::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.tour-container{
+  max-width: 800px;
+  padding-top: 64px!important;
+  padding-bottom: 64px!important;
+  padding: 0.01em 16px;
+  margin: auto;
+}
+
+.tour-container > h2 {
+  padding-top: 60px;
+  letter-spacing: 4;
+  font-size: 30px;
+  text-align: center;
+}
+
+.tour-container > .opacity {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.dates {
+  color: #757575!important;
+  background-color: #fff!important;
+  border: 1px solid #ccc!important;
+}
+
+.date {
+  border-bottom: 1px solid #ddd;
+  padding: 8px 16px!important;
+}
+
+.date:last-child {
+  border-bottom: none;
+}
+
+.date > .sell {
+  color: #fff;
+  background-color: rgb(255, 0, 0);
+  padding: 4px;
+  margin-left: 2%;
+}
+
+.date > .number {
+  background-color: black;
+  border-radius: 50%;
+  padding: 1px 9px;
+  float: right;
+  margin-right: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+/* Ticket Modal */
+
+.tickets {
+  margin: 0 -8px;
+  padding-top: 32px!important;
+  padding-bottom: 32px!important;
+}
+
+.tickets::before, .tickets::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.ticket {
+  width: 33.33333%;
+  float: left;
+  color: black;
+  overflow: hidden;
+  padding: 0 8px;
+  margin-bottom: 16px!important;
+}
+
+.ticket > img{
+  width: 100%;
+  vertical-align: middle;
+  border-style: none;
+}
+
+.ticket-text{
+  color: #000!important;
+  background-color: #fff!important;
+  padding: 0.01em 16px;
+}
+
+.ticket-text::before, .ticket-text::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.ticket-text > a {
+  color: #fff!important;
+  background-color: #000!important;
+  margin-bottom: 16px!important;
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+}
+
+
+/*The Contact Section*/
+#contact::before, #contact::after{
+  content:"";
+  display: table;
+  clear: both;
+}
+
+#contact{
+  max-width: 800px;
+  padding-top: 64px!important;
+  padding-bottom: 64px!important;
+  padding: 0.01em 16px;
+  margin: auto;
+}
+
+#contact h2{
+  text-align: center!important;
+  letter-spacing: 4px;
+  font-size: 30px;
+}
+
+#contact > .opacity{
+  text-align: center!important;
+}
+
+#contact > .container{
+  padding-top: 32px!important;
+  padding-bottom: 32px!important;
+}
+
+.contact-left{
+  width: 49.99999%;
+  margin-bottom: 16px!important;
+  font-size: 18px!important;
+  float: left;
+}
+
+.contact-left > i {
+  width: 30px;
+}
+
+.contact-right{
+  width: 49%;
+  float: left;
+}
+
+.contact-right .container {
+  margin: 0 -16px 8px -16px!important;
+  padding: 0 8px;
+}
+
+.container-half{
+  padding: 0 8px;
+  width: 49.99999%;
+  float: left;
+}
+
+.contact-right input{
+  border: 1px solid #ccc!important;
+  padding: 8px;
+  display: block;
+  width: 100%;
+  overflow: visible;
+}
+
+.contact-submit{
+  text-decoration: none;
+  color: #fff;
+  background-color: #000;
+  float: right;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* GOOGLE MAPS */
+#googleMap{
+  width: 100%;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  filter: grayscale(100%);
+  margin-bottom: 60px;
+}
+
+/* FOOTER */
+footer{
+  color: #000;
+  background-color: #f1f1f1;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  text-align: center;
+  font-size: 24px;
+  padding: 0.01em 16px;
+  display: block;
+}
+
+footer p{
+  font-size: 15px;
+  color: #000;
+}
+
+footer a{
+  color: inherit;
+}
+
+
+/* MEDIA */
+@media only screen and (max-width: 640px) {
+    .navbar > a:nth-child(3),
+    .navbar > a:nth-child(4),
+    .navbar > a:nth-child(5),
+    .navbar > a:nth-child(7) {
+      display: none !important;
+    }
+
+    #search{
+      display: none;
+    }
+
+    #menu-content a{
+      text-decoration: none;
+      color: #fff;
+      padding: 12px 24px;
+      display: block;
+    }
+
+    #menu-content a.menu{
+      display: block;
+      position: absolute;
+      background-color: #000;
+      right: 0;
+      top: 0;
+    }
+
+    #menu-content a:hover{
+      background-color: #ccc;
+      color: #000;
+    }
+
+    /* DROPDOWN NONE */
+    .dropdown {
+      display: none;
+    }
+
+    /* Second Section */
+
+    .div01 {
+      padding-top: 42px;
+    }
+
+    .mySlides > .text {
+      display: none !important;
+    }
+
+    /* BAND SECTION */
+    .box{
+      width: 100%;
+    }
+  }
+
+@media only screen and (min-width: 993px){
+  #menu-bar{
+    display: none!important;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 641px){
+  #menu-bar{
+    display: none!important;
+  }
+}
+}
